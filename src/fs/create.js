@@ -15,13 +15,13 @@ const create = async () => {
   }
 };
 
-const isFileExists = async(file) => {
+const isFileExists = async (file) => {
   try {
-    await access(file)
+    await access(file);
     return true;
   } catch (err) {
     return false;
   }
-}
+};
 
 await create();
