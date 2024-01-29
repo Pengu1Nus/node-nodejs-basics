@@ -11,11 +11,11 @@ const write = async () => {
   process.stdin.pipe(writeStream);
 
   process.stdin.on('end', () => {
-    console.log('Finished writing to file');
+    console.log('Finish writing.');
   });
 
   writeStream.on('error', (err) => {
-    console.error('An error occurred:', err);
+    console.error('Error:', err);
   });
 };
 
