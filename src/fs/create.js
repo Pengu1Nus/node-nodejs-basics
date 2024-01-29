@@ -2,7 +2,7 @@ import path from 'path';
 import { writeFile, access } from 'fs/promises';
 import { getPath } from '../utils/pathSolver.js';
 
-const { __filename, __dirname } = getPath(import.meta.url);
+const { __dirname } = getPath(import.meta.url);
 const filePath = path.join(__dirname, 'files', 'fresh.txt');
 const text = 'I am fresh and young';
 
